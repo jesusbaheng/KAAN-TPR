@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA'AN</title>
+    <link rel="icon" type="image/png" href="imagenes/favicon.png" class="w-[250px] h-auto mix-blend-multiply">
+    <!-- Cargamos Tailwind CSS para darle un diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#99c5ff] text-slate-800 font-sans">
+
+    <!-- Encabezado / Menú de Navegación -->
+    <header class="bg-white shadow-md py-0 sticky top-0 z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-4xl font-extrabold text-blue-900 tracking-tighter">
+                <img src="imagenes/logo.png" alt="logo" class="w-[150px] h-auto mix-blend-multiply">
+            </div>
+            <nav class="hidden md:flex space-x-6 font-medium text-xl text-slate-600">
+                <a href="#hero" class="hover:text-blue-600 transition">Inicio</a>
+                <a href="#trasfondo" class="hover:text-blue-600 transition">Quiénes Somos</a>
+                <a href="#tpr" class="hover:text-blue-600 transition">La TPR</a>
+                <a href="#valores" class="hover:text-blue-600 transition">Por qué elegirnos</a>
+            </nav>
+            <a href="#contacto" class="bg-blue-900 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition shadow-lg">Visítanos</a>
+        </div>
+    </header>
+
+    <section id="hero" class="container mx-auto px-6 py-2">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+            
+            <!-- Columna Izquierda: Texto y Botón -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-black text-blue-900 mb-6 leading-tight">
+                    El laboratorio en tus manos, <br> el conocimiento sin fronteras.
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl">
+                    Ecosistema de aprendizaje integral diseñado para facilitar la enseñanza práctica de electrónica sin necesidad de acceder a un laboratorio físico tradicional.
+                </p>
+                <a href="#tpr" class="bg-blue-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-blue-500 transition shadow-xl inline-block">
+                    Descubre la TPR
+                </a>
+            </div>
+
+            <!-- Columna Derecha: Imagen -->
+            <div class="md:w-1/2 flex justify-center">
+                <img src="imagenes/TPR1.jpg" alt="Tarjeta de Prácticas Remotas" class="w-full max-w-[500px] h-auto rounded-3xl shadow-2xl">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección El Corazón (Arquitectura TPR) -->
+    <section id="tpr" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-blue-900">Tarjeta de Prácticas Remotas (TPR)</h2>
+            <p class="text-xl text-slate-600 mt-4 max-w-3xl mx-auto">
+                La TPR no es solo una placa de desarrollo; es una estación de trabajo completa que permite al estudiante experimentar, programar y visualizar resultados inmediatos a través de la red, perrmitiendo adquirir conocimiento de manera segura y eficiente.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-10 max-w-5xl mx-auto border-t-8 border-blue-500">
+            <h3 class="text-3xl font-bold text-center text-blue-800 mb-10">El Corazón</h3>
+            <p class="text-center text-lg mb-10">La TPR utiliza un sistema de triple procesado, basado en la familia ESP32.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                    <h4 class="text-2xl font-bold text-blue-900 mb-4">ESP32 Alumno</h4>
+                    <p class="text-slate-700">Actualiza firmware remotamente. Su programación no tiene límite.</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                    <h4 class="text-2xl font-bold text-blue-900 mb-4">ESP32 Maestro</h4>
+                    <p class="text-slate-700">Recibe instrucciones habilitando elementos de la TPR.</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                    <h4 class="text-2xl font-bold text-blue-900 mb-4">ESP32-CAM</h4>
+                    <p class="text-slate-700">Retroalimentación visual en tiempo real del hardware.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección La Interfaz -->
+    <section class="bg-slate-100 py-20 border-y border-slate-200">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-blue-900 mb-6">La Interfaz</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-12 text-slate-700">
+                Aprende a programar utilizando las herramientas necesarias contando con acceso remoto a un dispositivo para su control.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <span class="px-8 py-3 bg-white text-blue-800 font-bold text-xl rounded-full shadow border border-slate-200">C++</span>
+                <span class="px-8 py-3 bg-white text-blue-800 font-bold text-xl rounded-full shadow border border-slate-200">Node-RED</span>
+                <span class="px-8 py-3 bg-white text-blue-800 font-bold text-xl rounded-full shadow border border-slate-200">VNC</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Valores y Objetivos -->
+    <section id="valores" class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-16">Elígenos</h2>
+        
+        <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16">
+            <!-- Valores -->
+            <div class="bg-white p-10 rounded-3xl shadow-lg">
+                <h3 class="text-3xl font-extrabold mb-6 text-blue-800 border-b-2 border-blue-100 pb-4">Valores</h3>
+                <ul class="space-y-4 text-xl text-slate-700">
+                    <li class="flex items-center">➔ Accesibilidad tecnológica</li>
+                    <li class="flex items-center">➔ Diseño centrado en el estudiante</li>
+                    <li class="flex items-center">➔ Conectividad y eficiencia</li>
+                </ul>
+            </div>
+            
+            <!-- Objetivos -->
+            <div class="bg-white p-10 rounded-3xl shadow-lg">
+                <h3 class="text-3xl font-extrabold mb-6 text-blue-800 border-b-2 border-blue-100 pb-4">Objetivos</h3>
+                <ul class="space-y-4 text-xl text-slate-700">
+                    <li class="flex items-center">➔ Eliminar las barreras educativas</li>
+                    <li class="flex items-center">➔ Expansión del impacto práctico</li>
+                    <li class="flex items-center">➔ Fomentar la experimentación segura</li>
+                    <li class="flex items-center">➔ Impulsar el desarrollo profesional en IoT</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center max-w-3xl mx-auto bg-blue-100 p-8 rounded-2xl">
+            <p class="text-2xl font-bold text-blue-900 mb-4">La TPR es ideal para integrarse en institutos educativos.</p>
+            <p class="text-lg text-slate-700">KA'AN es un emprendimiento nuevo, pero lleno de futuro para ofrecer una nueva era de la educación tecnológica.</p>
+        </div>
+    </section>
+
+    <!-- Pie de página (Footer) -->
+    <footer id="contacto" class="bg-slate-900 text-white py-12 border-t-8 border-blue-600">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-xl text-blue-30 font-light mb-8">
+                <img src="imagenes/logo.png" alt="logo" class="w-[250px] h-auto mix-blend-multiply block mx-auto"></p>
+            <div class="mt-8 text-slate-50 text-sm">
+                &copy; 2026 KA'AN.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
